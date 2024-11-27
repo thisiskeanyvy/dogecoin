@@ -13,7 +13,6 @@
 #include "bloom.h"
 #include "compat.h"
 #include "hash.h"
-#include "limitedmap.h"
 #include "netaddress.h"
 #include "protocol.h"
 #include "random.h"
@@ -695,6 +694,7 @@ public:
 
     // Counts getheaders requests sent to this peer
     std::atomic<int64_t> nPendingHeaderRequests;
+    std::set<uint256> orphan_work_set;
 
     CNode(NodeId id, ServiceFlags nLocalServicesIn, int nMyStartingHeightIn, SOCKET hSocketIn, const CAddress &addrIn, uint64_t nKeyedNetGroupIn, uint64_t nLocalHostNonceIn, const std::string &addrNameIn = "", bool fInboundIn = false);
     ~CNode();

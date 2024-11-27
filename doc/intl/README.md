@@ -13,9 +13,17 @@ Farsi:
 
 - [README](fa_IR/README.md)
 
+French:
+
+- [README](fr/README.md)
+
 Portuguese (Brazilian):
 
 - [README](pt_BR/README.md)
+
+Português (Portugal):
+
+- [Leia-me](pt_PT/README.md)
 
 Vietnamese:
 
